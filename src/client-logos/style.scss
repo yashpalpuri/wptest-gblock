@@ -1,0 +1,29 @@
+.myblock--client-logos {
+  .client-logos-grid {
+    display: grid;
+    grid-template-columns: repeat( var( --grid-col ) , 1fr );
+    
+    @media(max-width: 768px) {
+      grid-template-columns: repeat( 2 , 1fr );
+    }
+
+    .item {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: solid #ddd;
+      border-width: 0 1px 1px 0;
+    }
+  }
+  
+  .client-logos-container {
+    overflow: hidden;
+    width: 100%;
+  
+    .client-logos-grid {
+      width: calc(100% + 1px);
+      transform: translateY( 1px )
+    }
+  }
+}

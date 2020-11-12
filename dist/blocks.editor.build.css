@@ -1,0 +1,82 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+.wp-block-cgb-block-wptest-gblock {
+  background: #bada55;
+  border: 0.2rem solid #292929;
+  color: #292929;
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 2rem; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.myblock--hero-section {
+  position: relative; }
+  .myblock--hero-section .backround-image-layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #222; }
+    .myblock--hero-section .backround-image-layer:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(1, 1, 1, 0.2); }
+  .myblock--hero-section .entry-container {
+    position: relative;
+    z-index: 2;
+    max-width: 610px;
+    margin: 0 auto; }
+    .myblock--hero-section .entry-container .block-editor-block-list__layout > * {
+      margin-left: auto;
+      margin-right: auto; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.myblock--client-logos .client-logos-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-col), 1fr); }
+  @media (max-width: 768px) {
+    .myblock--client-logos .client-logos-grid {
+      grid-template-columns: repeat(2, 1fr); } }
+  .myblock--client-logos .client-logos-grid .item {
+    padding: 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    border: solid #ddd;
+    border-width: 0 1px 1px 0; }
+
+.myblock--client-logos .client-logos-container {
+  overflow: hidden;
+  width: 100%; }
+  .myblock--client-logos .client-logos-container .client-logos-grid {
+    width: calc(100% + 1px);
+    -webkit-transform: translateY(1px);
+        -ms-transform: translateY(1px);
+            transform: translateY(1px); }
